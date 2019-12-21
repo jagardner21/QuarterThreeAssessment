@@ -28,5 +28,5 @@ exports.deleteMessage = function (req, res) {
         .where('id', req.params.id)
         .del()
         .returning('*')
-        .then(deletedMessage => res.json(deleteMessage))
+        .then(deletedMessage => res.json(deletedMessage))
 }
